@@ -7,7 +7,7 @@ public class HelloWorldTest {
     @Test
     public void testHelloWorld() {
         HelloWorld helloWorld = new HelloWorld();
-        assertEquals("Hello World! Webhook", helloWorld.sayHello());
+        assertEquals("Hello World!", helloWorld.sayHello());
     }
 
     @Test

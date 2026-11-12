@@ -33,4 +33,13 @@ pipeline {
             }
         }
     }
+        post {
+        failure {
+            emailext(
+                subject: "Échec du build: ${env.JOB_NAME} - #${env.BUILD_NUMBER}",
+                body: "Le build ${env.JOB_NAME} #${env.BUILD_NUMBER} a échoué.\n\nConsultez la console Jenkins pour plus de détails : ${env.BUILD_URL}",
+                to: 'faniry07@yahoo.com'
+            )
+        }
+    }
 }
