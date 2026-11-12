@@ -2,7 +2,7 @@ package hello;
 
 public class HelloWorld {
     public String sayHello() {
-        return "Hello World! Webhook";
+        return "Hello World!";
     }
 
     public static int max(int a, int b) {
